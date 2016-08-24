@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+	}
+
+body {
+	font-size: 16px;
+	color: #000;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1 {
+	font-family: 'Patrick Hand SC', cursive;
+	text-align: center;
+	font-size: 1.75em;
+	margin-bottom: 1px;
+}
+
+h2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: right;
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 1.25em;
+	border-left: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9C9;
+	border-bottom-left-radius: 10px;
+	margin: 0px;
+	padding: 5px 15px 10px 10px;
+	width: 40%;
+	color: #fff;
+}
+
+
+h3 {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+span {
+	display: block;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+p {
+	margin-top: 58px;
+	line-height: 1.47;
+	font-weight: 300;
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+footer {
+	margin-top: 60px;
+}
+
+
+/* Wrapper menu */
+
+.row {
+	width: 100%;
+}
+
+section {
+	margin-top: 30px;
+}
+
+.col  {
+	padding: 0px 15px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.box {
+	position: relative;
+	padding: 0px 15px;
+	border: 1px solid #c9c9c9;
+	background-color: #f7f7f7;
+}
+
+.col:nth-child(1) h2 {
+	background-color: #c5a058;
+}
+
+.col:nth-child(2) h2 {
+	background-color: #b32e41;
+}
+
+.col:nth-child(3) h2 {
+	background-color: #413f5f;
+}
+
+.col:nth-child(1) .box {
+	border-bottom: 4px solid #c5a058;
+}
+
+.col:nth-child(2) .box {
+	border-bottom: 4px solid #b32e41;
+}
+
+.col:nth-child(3) .box {
+	border-bottom: 4px solid #413f5f;
+}
+
+/* Fin menu */
+
+
+/**** MEDIA QUERIES ***/
+
+/* Large screen - Desktop */
+@media (min-width: 992px) {
+	.col {
+		width: 33.33333333%; /* = col-lg-4*/
+	}
+}
+
+/* Medium screnn - Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col {
+			width: 50%; /* = col-md-6*/
+		}
+
+	.col:last-child {
+			width: 100%; /* = col-md-12*/
+		}	
+
+	.col:last-child h2 {
+			width: 19.5%;
+		}
+}
+
+/* Small screen - Mobile - not needed*/
+@media (max-width: 767px) {
+	.col {
+			width: 100%; /* = col-sm-12*/
+		}
+}
+
+/* FIN MEDIA QUERIES */
