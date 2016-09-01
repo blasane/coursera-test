@@ -67,6 +67,7 @@ footer {
 	font-size: 0.8em;
 	color: #767676;
 	padding-bottom: 15px;
+	margin-top: 5px;
 }
 /** END FOOTER **/
 
@@ -81,48 +82,52 @@ h2 {
 	font-weight: bold;
 }
 
-#main-content .row{
+.menu-content {
 	background-color: #f9f9f9;
-	margin: 0 10px 10px 10px;
 }
 
-.col-xs-12 img { 
+.menu-content.home {
+	margin: 0 5px;
+}
+
+.menu-content img { 
 	height: 20px;
 	vertical-align: baseline;
 }
 
-.col-xs-12 h3 {
-	font-family: 'Patrick Hand SC', cursive;
-	font-size: 1.4em;
+.col-md-4:nth-child(3) img, .col-sm-6:nth-child(3) img, .col-xs-12:nth-child(3) img { 
+	vertical-align: bottom;
 }
 
-.col-xs-12 p {
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-bottom: 25px;
+.menu-content h3 {
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 1.4em;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-top: 20px;
+}
+
+.menu-content p {
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 25px;
 	font-size: .9em;
 	line-height: 1.8;
 	text-align: justify;
 }
 
-.col-xs-12 a {
+.menu-content a {
 	text-decoration: underline;
 }
 
-.col-xs-12 a:hover {
+.menu-content a:hover {
 	color: red;
 }
 
 #main-content hr {
 	width: 15%;
-	margin-top: 25px;
-	margin-bottom: 15px;
-}
-
-footer hr {
-	width: 15%;
 	margin-top: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .bonus a {
@@ -135,19 +140,25 @@ footer hr {
 /** MEDIA QUERIES **/
 /*******+++ Large devices **********/
 @media (min-width: 1200px) {
-
+	#main-content {
+		padding: 0 30px;
+	}
 
 }
 
 /*******+++ Medium devices *********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+	#main-content {
+		padding: 0 30px;
+	}
 
 }
 
 /*******+++ Small devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.col-sm-6 {
+		margin-bottom: 20px;
+	}
 
 }
 
@@ -158,10 +169,13 @@ footer hr {
 		padding-left: 0px;
 	}
 	#item-menu {
-	background-color: #49647b;
+		background-color: #49647b;
 	}
 	#main-content hr, footer hr{
-	width: 30%;
+		width: 30%;
+	}
+	.col-sm-6 {
+		margin-bottom: 10px;
 	}
 }
 
