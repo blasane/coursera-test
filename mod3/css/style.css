@@ -1,0 +1,172 @@
+body {
+  font-size: 16px;
+  color: #000;
+}
+
+/** HEADER **/
+#header-wrapper {
+	background-color: #2d5271; 
+	border: 0;
+	border-radius: 0;
+}
+
+.navbar-brand h1 {
+	color: #fff;
+	font-size: 1.5em; 
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.8em;
+	padding-left: 35px;
+}
+
+a.navbar-brand:hover, a.navbar-brand:focus {
+	text-decoration: none;
+}
+
+/**** button styling ****/
+.navbar-header button.navbar-toggle {
+	border: 2px solid #fff;
+}
+
+.navbar-header .icon-bar {
+	border: 1px solid #fff;
+}
+
+.navbar-header button.navbar-toggle {
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
+
+/**** nav ****/
+#menu-list a {
+	color: #fff;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+#menu-list a span {
+	vertical-align: middle;
+	margin-left: 4px;
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 1.3em;
+}
+
+#menu-list a:hover {
+	background: #907951; /*#64795d*/
+}
+
+#menu-list img { 
+		height: 24px;
+}
+
+/** END HEADER **/
+
+
+/** FOOTER **/
+footer {
+	font-size: 0.8em;
+	color: #767676;
+	padding-bottom: 15px;
+}
+/** END FOOTER **/
+
+
+
+/** HOME PAGE - MAIN CONTENT **/
+h2 {
+	margin-top: 0px;
+	margin-bottom: 25px;
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 1.85em;
+	font-weight: bold;
+}
+
+#main-content .row{
+	background-color: #f9f9f9;
+	margin: 0 10px 10px 10px;
+}
+
+.col-xs-12 img { 
+	height: 20px;
+	vertical-align: baseline;
+}
+
+.col-xs-12 h3 {
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 1.4em;
+}
+
+.col-xs-12 p {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 25px;
+	font-size: .9em;
+	line-height: 1.8;
+	text-align: justify;
+}
+
+.col-xs-12 a {
+	text-decoration: underline;
+}
+
+.col-xs-12 a:hover {
+	color: red;
+}
+
+#main-content hr {
+	width: 15%;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+footer hr {
+	width: 15%;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.bonus a {
+	font-size: .8em;
+	text-decoration: none;
+}
+/** END HOME PAGE - MAIN CONTENT **/
+
+
+/** MEDIA QUERIES **/
+/*******+++ Large devices **********/
+@media (min-width: 1200px) {
+
+
+}
+
+/*******+++ Medium devices *********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/*******+++ Small devices **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/******+ Extra small devices *******/
+@media (max-width: 767px) {
+	.navbar-brand h1 {
+		padding-top: 2.5px;
+		padding-left: 0px;
+	}
+	#item-menu {
+	background-color: #49647b;
+	}
+	#main-content hr, footer hr{
+	width: 30%;
+	}
+}
+
+/***+ Super extra samll devices ****/
+@media (max-width: 479px) {
+
+}
+
