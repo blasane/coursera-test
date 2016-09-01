@@ -131,8 +131,15 @@ h2 {
 }
 
 .bonus a {
-	font-size: .8em;
+	font-size: .7em;
 	text-decoration: none;
+	color: #8a6d3b;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.bonus a:hover {
+	color: red;
 }
 /** END HOME PAGE - MAIN CONTENT **/
 
@@ -151,7 +158,9 @@ h2 {
 	#main-content {
 		padding: 0 30px;
 	}
-
+	#main-content hr, footer hr{
+		width: 20%;
+	}
 }
 
 /*******+++ Small devices **********/
@@ -159,7 +168,9 @@ h2 {
 	.col-sm-6 {
 		margin-bottom: 20px;
 	}
-
+	#main-content hr, footer hr{
+		width: 25%;
+	}
 }
 
 /******+ Extra small devices *******/
@@ -179,8 +190,4 @@ h2 {
 	}
 }
 
-/***+ Super extra samll devices ****/
-@media (max-width: 479px) {
-
-}
 
