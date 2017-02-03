@@ -3,6 +3,71 @@ body {
   color: #000;
 }
 
+
+
+/** extra css test ecosse **/
+h2 {
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+  color: #000;
+}
+h2:before, h2:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+h2:after {
+  margin: 0 -55% 0 .5em;
+}
+
+
+.status {
+  padding: 0px 40px;
+  /*display: flex;*/
+  justify-content: center;
+  border-bottom: 1px solid #9c9c9c;
+  position: relative;
+}
+
+.status:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #9c9c9c;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -8px;
+  left: 42%;
+}
+
+
+li.active>.status:before, li>.status:hover:before  {
+  background-color: red;
+}
+
+.nav-tabs>li.active>div.status>a, .nav-tabs>li>div.status>a:hover{
+	color: red;
+	text-decoration: none;
+}
+
+.nav-tabs li a {
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #9c9c9c;
+}
+
+.nav-tabs.custom {
+	margin: auto;
+	display: table;
+}
+
+
 /** HEADER **/
 #header-wrapper {
 	background-color: #2d5271; 
@@ -22,6 +87,7 @@ body {
 a.navbar-brand:hover, a.navbar-brand:focus {
 	text-decoration: none;
 }
+
 
 /**** button styling ****/
 .navbar-header button.navbar-toggle {
