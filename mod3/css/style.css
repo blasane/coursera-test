@@ -256,4 +256,86 @@ h2 {
 	}
 }
 
+/******+ test pretty box *******/
+div.homecase a.btn-info {
+	border: none;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px 18px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 
+
+div.pricing {
+	border: 1px solid #ddd;
+	margin: 0 0 1.25em 0;
+}
+
+div.pricing ul {
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+div.pricing ul li {
+	list-style: none;
+	text-align: center;
+	padding: 1em;
+	color: #333;
+}
+
+div.pricing ul li.col-header {
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: #ddd;
+}
+
+div.pricing ul li.col-grey {
+	background-color: #eee;
+	font-size: 1.25em;
+}
+
+div.pricing ul li p {
+	margin-bottom: 0px;
+}
+
+div.pricing ul li.col-desc p.box-price {
+	font-weight: bold;
+	font-size: 1.35em;
+}
+
+div.pricing ul li.col-desc p.box-price span{
+	color: #fc3c6f;
+	font-weight: bold;
+}
+
+div.pricing ul li.col-desc p.box-sold {
+	font-size: 0.85em;
+}
+div.pricing ul li.col-desc p.box-port {
+	font-size: 0.8em;
+}
+
+div.pricing ul li.col-desc {
+	font-size: 0.9em;
+	border-bottom: 1px dotted #ddd;
+}
+
+div.pricing ul li a.btn-info {
+	background-color: #fc3c6f;
+	border: 0px;
+	border-radius: 0px;
+	padding: 0.8em 2.7em;
+	font-weight: bold;
+}
+
+div.row.reassurance div.col-sm-4 p span {
+	text-decoration: underline;
+	color: #808080;
+}
+
+div.row.reassurance div.col-sm-4 p  {
+	margin-top: 10px;
+}
